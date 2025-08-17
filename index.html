@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <!-- Boxicons CDN Link -->
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+    <title> Space centrale de vendeur  </title>
+</head>
+<body>
+    <!--la partie du corps du code -->
+
+
+    <div class="sidebar">
+
+
+
+        <!--la section de logo-->
+        <div class="logo-details">
+            <i class="bx bxl-c-plus-plus"></i>
+            <span class="logo_name">centrale vendeur cmr</span>
+        </div>
+
+
+        <!--la partie de navigateur -->
+        <ul class="nav-links">
+
+            <li>
+                <a href="#" class="active">
+                  <i class="bx bx-grid-alt"></i>
+                  <span class="links_name">Dashboard</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="bx bx-box"></i>
+                    <span class="links_name">stock</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="bx bx-box"></i>
+                    <span class="links_name">commande</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="bx bx-box"></i>
+                    <span class="links_name">factures</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                  <i class="bx bx-message"></i>
+                  <span class="links_name">Messages</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="bx bx-box"></i>
+                    <span class="links_name">statistique</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="bx bx-box"></i>
+                    <span class="links_name">parametre</span>
+                </a>
+            </li>
+
+            <li class="log_out">
+                <a href="#">
+                  <i class="bx bx-log-out"></i>
+                  <span class="links_name">se déconnecter</span>
+                </a>
+              </li>
+        </ul>
+    </div>
+<!--la fin de section navbar-->
+
+<!--la section principale accueil bar haut -->
+        <section class="home-section">
+                <nav>
+
+                    <div class="sidebar-button">
+                        <i class="bx bx-menu sidebarBtn"></i>
+                        <span class="dashboard">Dashboard</span>
+                    </div>
+
+                    <div class="search-box">
+                        <input type="text" placeholder="bar de recherche..." />
+                        <i class="bx bx-search"></i>
+                    </div>
+
+                    <div class="profile-details">
+                        <img src="images/profile.jpeg" alt="" />
+                        <span class="admin_name"> mohamed camara</span>
+                        <i class="bx bx-chevron-down"></i>
+                    </div>
+
+
+                </nav>
+
+                <!--la partie home-contente -->
+
+              <div class="home-content">
+
+
+                    <div class="overview-boxes">
+
+
+                      <div class="box">
+                        <div class="right-side">
+                          <div class="box-topic">Total de vente</div>
+                          <div class="number">40,876</div>
+                          <div class="indicator">
+                            <i class="bx bx-up-arrow-alt"></i>
+                            <span class="text">pour hier</span>
+                          </div>
+                        </div>
+                         <i class="bx bx-cart-alt cart"></i>
+                      </div>
+
+
+                      <div class="box">
+                        <div class="right-side">
+                          <div class="box-topic">produit commande</div>
+                          <div class="number">38,876</div>
+                          <div class="indicator">
+                            <i class="bx bx-up-arrow-alt"></i>
+                            <span class="text">non livrée</span>
+                          </div>
+                        </div>
+                        <i class="bx bxs-cart-add cart two"></i>
+                      </div>
+
+
+
+                        <div class="box">
+                          <div class="right-side">
+                            <div class="box-topic">produit livré</div>
+                            <div class="number">12,876</div>
+                            <div class="indicator">
+                              <i class="bx bx-up-arrow-alt"></i>
+                              <span class="text">pour hier</span>
+                            </div>
+                          </div>
+                          <i class="bx bx-cart cart three"></i>
+                        </div>
+                    
+
+              
+                        <div class="box">
+                          <div class="right-side">
+                            <div class="box-topic">produit retourné</div>
+                            <div class="number">11,086</div>
+                            <div class="indicator">
+                              <i class="bx bx-down-arrow-alt down"></i>
+                              <span class="text">voir hier</span>
+                            </div>
+                          </div>
+                          <i class="bx bxs-cart-download cart four"></i>
+                        </div>
+                      </div>
+
+
+        
+      
+      </div>
+    </section>
+
+
+
+
+                    
+    </section>
+
+
+<script>
+let sidebar = document.querySelector(".sidebar");
+let sidebarbarBtn = document.querySelector(".sidebarBtn");
+
+sidebarbarBtn.onclick=function(){
+    sidebar.classList.toggle("active");
+    if(sidebar.classList.contains("active")){
+        sidebarbarBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+    }else sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+}
+</script>
+
+</div>
+</body>
+</html>
